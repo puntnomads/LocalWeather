@@ -1,0 +1,25 @@
+body { text-align: center; }
+ { height: 100px; width: 100px;     background:#E0E0E0; }
+div {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -440px;
+    width: 900px;
+    height: 480px;
+    background:#E0E0E0;
+    border-radius: 25px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
