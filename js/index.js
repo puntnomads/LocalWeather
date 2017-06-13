@@ -7,7 +7,6 @@ var lat =  null;
 var tempInCelsius = null;
 var tempInFahrenheit = null;
 var tempUnit = 0;
-var mykey = config.API_KEY;
 
 function getLocation() {
   if (navigator.geolocation) {      navigator.geolocation.getCurrentPosition(showPosition); }
@@ -28,7 +27,7 @@ tempUnit = 0;
   }
 }
 function callOpenWeatherMapAPI() {
-var url ="https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=" + mykey;
+var url ="https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=df2dd470c781c41603e19e0b2476470e";
 $.getJSON(url,function(result){
 $("#city").text(result.name);
 tempInCelsius = Math.floor(result.main.temp-273.15);
